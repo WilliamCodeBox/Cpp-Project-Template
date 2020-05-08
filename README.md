@@ -14,6 +14,11 @@ A C++ project template uses CMake with Doxygen, Sphinx integrated
 
 - [Hunter](https://github.com/cpp-pm/hunter/releases), you can check the [releases](https://github.com/cpp-pm/hunter/releases), and then change the cooresponding content in `HunterGate()` within the `project-root/CMakeLists.txt`.
 
+## Prerequisite
+
+- CMake
+- Doxygen
+
 ## Usage
 
 ## References and Thanks to
