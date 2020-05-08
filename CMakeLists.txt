@@ -2,6 +2,9 @@
 ###                         Project                           ###
 #################################################################
 cmake_minimum_required(VERSION 3.7)
+include               (cmake/HunterGate.cmake)
+HunterGate            ( URL "https://github.com/cpp-pm/hunter/archive/v0.23.253.tar.gz"
+                        SHA1 "88ea6d37c897a81a080eb9ae0f69d7807bbb3c73")
 project               (YourGreatProjectName VERSION 1.0.0 LANGUAGES CXX)
 
 #################################################################
@@ -18,16 +21,13 @@ endif()
 #################################################################
 ###                         Options                           ###
 #################################################################
-set(BUILD_TESTS "Build the tests" OFF)
+set(BUILD_TESTS "Build the tests" ON)
 set(BUILD_DOCS "Build the docs" OFF)
 
 #################################################################
 ###                       Dependencies                        ###
 #################################################################
-include   (cmake/HunterGate.cmake)
-HunterGate(
-    URL "https://github.com/cpp-pm/hunter/archive/v0.23.253.tar.gz"
-    SHA1 "88ea6d37c897a81a080eb9ae0f69d7807bbb3c73")
+
 
 
 
