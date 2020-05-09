@@ -2,17 +2,22 @@
 
 A C++ project template uses CMake with Doxygen, Sphinx integrated
 
-## Why
+## Used for
 
-- Learning the basics
-- Automating the boring and repeated work
+Two main things when starting a new Cpp project
 
-* Ease the pain in installing and finding dependencies
-* Run everywhere
+- Dependency
+- Documentation
+- And of course, a general purpose Cpp project structure
 
 ## Features
 
-- [Hunter](https://github.com/cpp-pm/hunter/releases), you can check the [releases](https://github.com/cpp-pm/hunter/releases), and then change the cooresponding content in `HunterGate()` within the `project-root/CMakeLists.txt`.
+- **Package Management** using
+  - [Hunter](https://hunter.readthedocs.io/en/latest/index.html).
+- **Project Documentation** using
+  - **[Doxygen](https://github.com/doxygen/doxygen)**
+  - **[Sphynix](https://github.com/sphinx-doc/sphinx/)**
+- **CMake Integratation**
 
 ## Prerequisite
 
@@ -20,6 +25,29 @@ A C++ project template uses CMake with Doxygen, Sphinx integrated
 - Doxygen
 
 ## Usage
+
+### Use this template
+
+You can click the `Use this template` button to create your new Github repository
+
+![Use this template](./images/use-this-template.png)
+
+### Clone this repository
+
+- clone this repository
+  ```bash
+  > git clone https://github.com/WilliamCodeBox/Cpp-Project-Template.git
+  ```
+- use the name of your greate Cpp project
+  ```bash
+  > mv Cpp-Project-Template NameOfYourCppProject
+  ```
+- start over the version control
+  ```bash
+  > cd NameOfYourCppProject
+  > rm -rf .git
+  > git init
+  ```
 
 ## References and Thanks to
 

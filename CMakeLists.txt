@@ -1,4 +1,10 @@
 #################################################################
+###                         Options                           ###
+#################################################################
+set(BUILD_TESTS "Build the tests" ON)
+set(BUILD_DOCS "Build the docs" OFF)
+
+#################################################################
 ###                         Project                           ###
 #################################################################
 cmake_minimum_required(VERSION 3.7)
@@ -16,13 +22,6 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(STATUS "   Create a separate directory, named `build` for convention")
     message(STATUS "   and run CMake again")
 endif()
-
-
-#################################################################
-###                         Options                           ###
-#################################################################
-set(BUILD_TESTS "Build the tests" ON)
-set(BUILD_DOCS "Build the docs" OFF)
 
 #################################################################
 ###                       Dependencies                        ###
