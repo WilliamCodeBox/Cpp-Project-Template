@@ -49,6 +49,30 @@ You can click the `Use this template` button to create your new Github repositor
   > rm -rf .git
   > git init
   ```
+- set up environment for documentation
+
+  **Suggestion**: create a virtural python environment using [conda](https://docs.conda.io/en/latest/)
+
+  - install required python packages
+
+  ```bash
+  > cd docs
+  > pip install -r requirements.txt
+  ```
+
+  - change relavent content within `conf.py` and `index.rst`
+    - `project` = 'cpp-project-template'
+    - `copyright` = '2020, WilliamCodeBox'
+    - `author` = 'WilliamCodeBox'
+    - `release` = '1.0.0'
+    - `sourceDir` = "../include"
+    - `docOutputDir` = "./api"
+    - `rootFileTitle` = "Library API"
+  - Generate the docs
+
+  ```bash
+  > make html
+  ```
 
 ## Configuration
 
