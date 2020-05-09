@@ -2,7 +2,8 @@
 ###                         Options                           ###
 #################################################################
 set(BUILD_TESTS "Build the tests" ON)
-set(BUILD_DOCS "Build the docs" ON)
+set(BUILD_DOCS "Build the docs" OFF)
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
 #################################################################
 ###                         Project                           ###

@@ -25,7 +25,7 @@ And of course, a general purpose Cpp project structure
 - CMake
 - Doxygen
 
-## Usage
+## Installation
 
 ### Use this template
 
@@ -49,6 +49,12 @@ You can click the `Use this template` button to create your new Github repositor
   > rm -rf .git
   > git init
   ```
+
+## Configuration
+
+### Documentation Customization
+
+[CMake Doxygen Config](https://cmake.org/cmake/help/latest/module/FindDoxygen.html)
 
 ## References and Thanks to
 
