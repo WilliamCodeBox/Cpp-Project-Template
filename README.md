@@ -8,7 +8,8 @@ Two main things when starting a new Cpp project
 
 - Dependency
 - Documentation
-- And of course, a general purpose Cpp project structure
+
+And of course, a general purpose Cpp project structure
 
 ## Features
 

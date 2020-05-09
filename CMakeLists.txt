@@ -2,7 +2,7 @@
 ###                         Options                           ###
 #################################################################
 set(BUILD_TESTS "Build the tests" ON)
-set(BUILD_DOCS "Build the docs" OFF)
+set(BUILD_DOCS "Build the docs" ON)
 
 #################################################################
 ###                         Project                           ###
