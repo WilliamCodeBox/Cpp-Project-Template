@@ -22,8 +22,12 @@ And of course, a general purpose Cpp project structure
 
 ## Prerequisite
 
-- CMake
-- Doxygen
+Basically you just need [CMake](https://cmake.org) and a C++ compiler.
+
+If you want to take the way provided by this repo, you also need
+
+- [Python](https://www.python.org)
+- [Doxygen](https://github.com/doxygen/doxygen)
 
 ## Installation
 
