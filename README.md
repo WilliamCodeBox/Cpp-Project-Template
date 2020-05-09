@@ -14,7 +14,7 @@ And of course, a general purpose Cpp project structure
 ## Features
 
 - **Package Management** using
-  - [Hunter](https://hunter.readthedocs.io/en/latest/index.html).
+  TODO:
 - **Project Documentation** using
   - **[Doxygen](https://github.com/doxygen/doxygen)**
   - **[Sphynix](https://github.com/sphinx-doc/sphinx/)**
@@ -91,4 +91,3 @@ You can click the `Use this template` button to create your new Github repositor
 - [Clear, Functional C++ Documentation with Sphinx + Breathe + Doxygen + CMake](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/)
 - [Adding doxygen support to CMakeLists.txt](http://www.miscdebris.net/blog/2019/02/25/adding-doxygen-support-to-cmakelists-txt/)
 - [David/CMakeTemplate](https://github.com/DavidAce/CMakeTemplate)
-- [Hunter](https://hunter.readthedocs.io/en/latest/index.html)
