@@ -23,12 +23,17 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 
 # -- Project information -----------------------------------------------------
 
-project = 'cpp=project-template'
+project = 'cpp-project-template'
 copyright = '2020, WilliamCodeBox'
 author = 'WilliamCodeBox'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
+
+# source files you want to be documented
+sourceDir = "../include"
+docOutputDir = "./api"
+rootFileTitle = "Library API"
 
 # -- General configuration ---------------------------------------------------
 
@@ -74,11 +79,11 @@ from exhale import utils
 exhale_args = {
     # These arguments are required
     "containmentFolder":
-    "./api",
+    docOutputDir,
     "rootFileName":
     "library_root.rst",
     "rootFileTitle":
-    "Library API",
+    rootFileTitle,
     "doxygenStripFromPath":
     "..",
     # Suggested optional arguments
@@ -89,7 +94,7 @@ exhale_args = {
     "exhaleExecutesDoxygen":
     True,
     "exhaleDoxygenStdin":
-    "INPUT = ../include",
+    "INPUT = " + sourceDir,
     "customSpecificationsMapping":
     utils.makeCustomSpecificationsMapping(specificationsForKind)
 }
