@@ -1,8 +1,8 @@
 #################################################################
 ###                         Options                           ###
 #################################################################
-set(BUILD_TESTS "Build the tests" ON)
-set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
+option(BUILD_TESTS "Build the tests" ON)
+option(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
 #################################################################
 ###                         Project                           ###
