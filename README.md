@@ -55,6 +55,8 @@ You can click the `Use this template` button to create your new Github repositor
   ```
 - set up environment for documentation
 
+  TODO: may be a python script to automatically run the following steps
+
   **Suggestion**: create a virtural python environment using [conda](https://docs.conda.io/en/latest/)
 
   - install required python packages
