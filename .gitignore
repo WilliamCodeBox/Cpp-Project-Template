@@ -33,3 +33,8 @@
 
 build
 docs/docs
+_build
+_static
+_templates
+doxyoutput
+api
