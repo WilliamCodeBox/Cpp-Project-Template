@@ -76,7 +76,6 @@ You can click the `Use this template` button to create your new Github repositor
     - `author` = 'WilliamCodeBox'
     - `release` = '1.0.0'
     - `sourceDir` = "../include"
-    - `docOutputDir` = "./api"
     - `rootFileTitle` = "Library API"
 
   - Generate the docs
