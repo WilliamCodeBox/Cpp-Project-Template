@@ -1,19 +1,10 @@
 # Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# -- Path setup --------------------------------------------------------------
+# -- Theme information -----------------------------------------------------
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
 import os
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-
 if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
@@ -21,26 +12,28 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-# -- Project information -----------------------------------------------------
+import json
+from datetime import date
 
-project = 'cpp-project-template'
-copyright = '2020, WilliamCodeBox'
-author = 'WilliamCodeBox'
+currentYear = str(date.today().year)
 
-# The full version, including alpha/beta/rc tags
-release = '1.0.0'
+with open("./config.json", "r") as configFile:
+    config = json.load(configFile)
 
-# source files you want to be documented
-sourceDir = "../include"
-docOutputDir = "./api"
-rootFileTitle = "Library API"
+    # -- Project information -----------------------------------------------------
+    project = config["ProjectConfig"]["project-name"]
+    author = config["ProjectConfig"]["author"]
+    copyright = currentYear + ", " + author
+    release = config["ProjectConfig"]["release"]
+
+    # -- Doc information -----------------------------------------------------
+    sourceDir = config["DocConfig"][
+        "sourceDir"]  # source files you want to be documented
+    docOutputDir = "./api"  # Warning: if you change `docOutputDir`, you have to change `index.rst` accordingly
+    rootFileTitle = "Library API"
 
 # -- General configuration ---------------------------------------------------
 
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
-# The `extensions` list should already be in here from `sphinx-quickstart`
 extensions = [
     # there may be others here already, e.g. 'sphinx.ext.mathjax'
     'breathe',

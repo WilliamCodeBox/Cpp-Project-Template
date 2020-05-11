@@ -1,0 +1,10 @@
+{
+  "ProjectConfig": {
+    "project-name": "cpp-project-template",
+    "author": "WilliamCodeBox",
+    "release": "1.0.0"
+  },
+  "DocConfig": {
+    "sourceDir": "../include"
+  }
+}
