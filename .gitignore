@@ -34,8 +34,9 @@
 .vscode
 build
 docs/docs
-_build
-_static
-_templates
-doxyoutput
-api
+docs/_build
+docs/_static
+docs/_templates
+docs/doxyoutput
+docs/api
+docs/index.rst

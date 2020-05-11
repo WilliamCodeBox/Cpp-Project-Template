@@ -1,9 +1,8 @@
-.. cpp=project-template documentation master file, created by
-   sphinx-quickstart on Sat May  9 13:31:05 2020.
+.. cpp-project-template documentation master file, created on 2020-05-11.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to cpp=project-template's documentation!
+Welcome to cpp-project-template's documentation!
 ================================================
 
 .. toctree::
