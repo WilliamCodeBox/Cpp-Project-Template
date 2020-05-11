@@ -54,34 +54,44 @@ You can click the `Use this template` button to create your new Github repositor
   > rm -rf .git
   > git init
   ```
-- set up environment for documentation
 
-  TODO: may be a python script to automatically run the following steps
+## Usage
 
-  **Suggestion**: create a virtural python environment using [conda](https://docs.conda.io/en/latest/)
+- Environment for documentation
 
-  - install required python packages
+  > **Suggestion**: create a virtural python environment using [conda](https://docs.conda.io/en/latest/)
 
-  ```bash
-  > cd docs
-  > pip install -r requirements.txt
-  ```
+  - [ ] **TODO**: may be a python/bash script to automatically run the following steps
 
-  - change relavent content within `conf.py` and `index.rst`
+  * install required python packages
+
+    ```bash
+    > cd docs
+    > pip install -r requirements.txt
+    ```
+
+  - change relavent content within `config.json`
+
     - `project` = 'cpp-project-template'
-    - `copyright` = '2020, WilliamCodeBox'
     - `author` = 'WilliamCodeBox'
     - `release` = '1.0.0'
     - `sourceDir` = "../include"
     - `docOutputDir` = "./api"
     - `rootFileTitle` = "Library API"
+
   - Generate the docs
 
-  ```bash
-  > make html
-  ```
+    ```bash
+    > make html
+    ```
 
-## Configuration
+- Third-party C++ libraries
+  - search and install the libs with the help of `vcpkg`
+    ```bash
+    > ./vcpkg search gtest
+    > ./vcpkg install gtest
+    ```
+  - find the libs within `CMakeLists.txt`
 
 ### Documentation Customization
 
@@ -92,3 +102,4 @@ You can click the `Use this template` button to create your new Github repositor
 - [Clear, Functional C++ Documentation with Sphinx + Breathe + Doxygen + CMake](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/)
 - [Adding doxygen support to CMakeLists.txt](http://www.miscdebris.net/blog/2019/02/25/adding-doxygen-support-to-cmakelists-txt/)
 - [David/CMakeTemplate](https://github.com/DavidAce/CMakeTemplate)
+- [vcpkg](https://github.com/microsoft/vcpkg)
