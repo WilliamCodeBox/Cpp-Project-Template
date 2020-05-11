@@ -14,7 +14,8 @@ And of course, a general purpose Cpp project structure
 ## Features
 
 - **Package Management** using
-  TODO:
+  - [vcpkg github repo](https://github.com/microsoft/vcpkg)
+  - [vcpkg buildsystem integration](https://vcpkg.readthedocs.io/en/latest/users/integration/)
 - **Project Documentation** using
   - **[Doxygen](https://github.com/doxygen/doxygen)**
   - **[Sphynix](https://github.com/sphinx-doc/sphinx/)**
