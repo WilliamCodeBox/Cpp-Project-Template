@@ -2,6 +2,7 @@
 ###                         Options                           ###
 #################################################################
 option(BUILD_TESTS "Build the tests" ON)
+option(BUILD_EXPERIMENTS, "Build the experiments" ON)
 option(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 
 #################################################################
@@ -38,9 +39,8 @@ endif()
 #################################################################
 ###                         Sources                           ###
 #################################################################
-set(
-    LIB_DEMO_SOURCE_FILES
-    ${PROJECT_SOURCE_DIR}/source/demo.cpp)
+set(LIB_DEMO_SOURCE_FILES
+    ${PROJECT_SOURCE_DIR}/src/demo.cpp)
 
 
 #################################################################
@@ -58,9 +58,12 @@ set_target_properties     (demo PROPERTIES CXX_STANDARD 11)
 
 
 #################################################################
-###                          Tests                            ###
+###                       Subfolders                          ###
 #################################################################
+if(BUILD_EXPERIMENTS)
+    add_subdirectory(experiments)
+endif()
 if(BUILD_TESTS)
-    add_subdirectory(test)
+    add_subdirectory(tests)
 endif()
 

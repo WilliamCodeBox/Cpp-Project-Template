@@ -34,9 +34,7 @@ If you want to take the way provided by this repo, you also need
 
 ### Use this template
 
-You can click the `Use this template` button to create your new Github repository
-
-![Use this template](./images/use-this-template.png)
+You can click the [Use this template](https://github.com/WilliamCodeBox/Cpp-Project-Template/generate) button to create your new Github repository
 
 ### Clone this repository
 
